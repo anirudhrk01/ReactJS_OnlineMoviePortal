@@ -1,0 +1,64 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-block: 10px;
+    padding: 0 2rem;
+    background-color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav span:hover {
+    border-bottom: 2px solid #75bde0;
+    padding-bottom: 5px;
+}
+
+nav span:active {
+    color: #2050ff;
+}
+
+.nav-options {
+    display: flex;
+    list-style: none;
+    margin: 40px;
+    padding: 0;
+}
+
+.input-group input {
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: #75bde0;
+    transition: width 0.3s ease-in-out;
+}
+
+.input-group:focus-within {
+    width: 20rem;
+    transition: width 0.3s ease-in-out;
+}
+
+.input-group input::placeholder {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+}
